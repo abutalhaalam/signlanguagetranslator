@@ -1,2 +1,3 @@
 # abutalhaalam.github.io
-Website
+personal website code
+all rights reserved
