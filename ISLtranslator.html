@@ -69,10 +69,14 @@
       $("#translateimgs").html("");
 
       for (var i = 0; i < text.length; i++) {
-        
-        if (text[i].match(/[AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz]/)) {
+        if (text[i].match(/[abcdefghijklmnopqrstuvwxyz]/)) {
           $("#translateimgs").append("<img style='max-width:95px;max-height:95px;margin:1%;' src='./assets/images/isl-img/" + text[i] + ".png'/>")//dont forget to change the extension of image files
         } 
+        
+        if (text[i].match(/[ABCDEFGHIJKLMNOPQRSTUVWXYZ]/)) {
+          $("#translateimgs").append("<img style='max-width:95px;max-height:95px;margin:1%;' src='./assets/images/isl-img/" + text[i] + ".png.png'/>")//dont forget to change the extension of image files
+        } 
+
         else if (text[i].match(/[\s]/)) {
           $("#translateimgs").append("<img style='max-width:95px;max-height:95px;margin:1%;' src='./assets/images/isl-img/space.jpg'/>")//<----- different extension img file
         }
