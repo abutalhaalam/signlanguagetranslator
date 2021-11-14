@@ -151,36 +151,24 @@ font15 {
   font-size: 15%;
 }
 
-
-.transdiv .trnsl8 {
-  width: 100%;
-  height: 100%;
-  border: none;
-  resize: none;
-  outline: none;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 2px;
-  font-size: 24px;
-  font-family: sans-serif
-}
-
-
-.translate-container .transdiv {
-  padding: 0;
-  height: 400px;
-  border:5px groove lavender;
+.smaller400 {
+  display: none;
 }
 
 .translate-container .english {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 10px;
-  position: fixed;
+  height: 400px;
+  border:5px groove lavender;
+  width: 90%;
 } 
 
 .translate-container .trnsl8 {
   margin-left: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
+  height: 400px;
+  border:5px groove lavender;
+  width: 90%;
 }
 
 .translate-container textarea {
@@ -189,7 +177,6 @@ font15 {
   border: none;
   resize: none;
   outline: none;
-  padding: 20px;
   box-sizing: border-box;
   border-radius: 2px;
   font-size: 40px;
@@ -251,4 +238,190 @@ font15 {
 
 copyright1 {
   color: rgba(238, 238, 238, 0.438);
+}
+
+.translator-wrapper {
+  position: relative;
+  left: 2%;
+}
+
+@media only screen and (max-width: 400px) {
+  .everythinginbody {
+      display: none;
+  }
+
+  .smaller400 {
+       display:block ;
+  }
+}
+
+
+@media only screen and (max-width: 400px) and (min-width:310px) and (orientation: portrait) {
+  .title {
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size:100%;
+    max-width:80%;
+    max-height:80%;
+  }
+  .title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    color:#eee;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .subtitle h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #9797976b;
+  }
+  .links-section {
+    margin-bottom: 3%;
+    padding-top: 2%;
+    text-align: center;
+    size: 10px;
+    transform: scale(1);
+  }
+  .move-div-left {
+
+  }
+  
+  .move-div-right {
+
+  }
+
+  .translated {
+    max-width:55px;max-height:55px;margin:1%;
+  }
+  .translator-wrapper {
+    position: relative;
+    left: 1%;
+  }
+  
+.translate-container .english {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 200px;
+  border:5px groove lavender;
+  width: 175%;
+} 
+
+.translate-container .trnsl8 {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 200px;
+  border:5px groove lavender;
+  width: 175%;
+  left: -99.1%;
+  margin-top:130%;
+}
+
+.translate-container textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 22px;
+  font-family: 'IBM Plex Serif', serif;
+  position: absolute;
+}
+
+.nte {
+margin-top:10%;
+}
+}
+/*850 is max width */
+@media only screen and (max-width: 400px) and (min-width:401px) and (orientation: portrait) {
+  .title {
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size:100%;
+    max-width:80%;
+    max-height:80%;
+  }
+  .title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    color:#eee;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .subtitle h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #9797976b;
+  }
+  .links-section {
+    margin-bottom: 3%;
+    padding-top: 2%;
+    text-align: center;
+    size: 10px;
+    transform: scale(1);
+  }
+  .move-div-left {
+
+  }
+  
+  .move-div-right {
+
+  }
+
+  .translated {
+    max-width:55px;max-height:55px;margin:1%;
+  }
+  .translator-wrapper {
+    position: relative;
+    left: 1%;
+  }
+  
+.translate-container .english {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 200px;
+  border:5px groove lavender;
+  width: 175%;
+} 
+
+.translate-container .trnsl8 {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 200px;
+  border:5px groove lavender;
+  width: 175%;
+  left: -99.1%;
+  margin-top:130%;
+}
+
+.translate-container textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 22px;
+  font-family: 'IBM Plex Serif', serif;
+  position: absolute;
+}
+
+.nte {
+margin-top:10%;
+}
 }
