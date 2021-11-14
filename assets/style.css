@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300;1,700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -245,17 +246,15 @@ copyright1 {
   left: 2%;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 309px) {
   .everythinginbody {
-      display: none;
-  }
+    display: none;
+}
 
   .smaller400 {
        display:block ;
   }
 }
-
-
 @media only screen and (max-width: 400px) and (min-width:310px) and (orientation: portrait) {
   .title {
     padding-top: 1%;
@@ -340,8 +339,8 @@ copyright1 {
 margin-top:10%;
 }
 }
-/*850 is max width */
-@media only screen and (max-width: 400px) and (min-width:401px) and (orientation: portrait) {
+
+@media only screen and (max-width: 433px) and (min-width:401px) and (orientation: portrait) {
   .title {
     padding-top: 1%;
     padding-right: 5%;
@@ -424,4 +423,100 @@ margin-top:10%;
 .nte {
 margin-top:10%;
 }
+
+.nte {
+margin-top:75%;
+}
+.shrnk-nte {
+  display: none;
+}
+}
+/*850 is max width */
+@media only screen and (max-width: 600px) and (min-width:434px) and (orientation: portrait) {
+  .title {
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size:100%;
+    max-width:80%;
+    max-height:80%;
+  }
+  .title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    color:#eee;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .subtitle h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #9797976b;
+  }
+  .links-section {
+    margin-bottom: 3%;
+    padding-top: 2%;
+    text-align: center;
+    size: 10px;
+    transform: scale(1);
+  }
+  .move-div-left {
+
+  }
+  
+  .move-div-right {
+
+  }
+
+  .translated {
+    max-width:55px;max-height:55px;margin:1%;
+  }
+  .translator-wrapper {
+    position: relative;
+    left: 1%;
+  }
+  
+.translate-container .english {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 275px;
+  border:5px groove lavender;
+  width: 175%;
+} 
+
+.translate-container .trnsl8 {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 275px;
+  border:5px groove lavender;
+  width: 175%;
+  left: -99.1%;
+  margin-top:130%;
+}
+
+.translate-container textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 22px;
+  font-family: 'IBM Plex Serif', serif;
+  position: absolute;
+}
+
+.nte {
+margin-top:75%;
+}
+.shrnk-nte {
+  display: none;
+}
+
 }
