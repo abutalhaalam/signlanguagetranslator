@@ -16,10 +16,10 @@ function translating(text) {
 
 var timeout;
 $(document).ready(function () {
-    $('.translate-container .transdiv.english').on("input", function () {
+    $('.translate-container .trans.div.english').on("input", function () {
         clearTimeout(timeout);
         timeout = setTimeout(function () {
-            var english = $('#english-text').val();
+            var english = $('#englishtext').val();
             var translate = translating(english);
             $('#trnsl8-text').val(translate);
         });
@@ -27,6 +27,6 @@ $(document).ready(function () {
 });
 
 
-
-
-
+function eraseText() {
+    document.getElementById("trnsl8-text").value = "";
+}
