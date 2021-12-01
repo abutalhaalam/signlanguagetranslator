@@ -112,7 +112,7 @@ div.bottomright {
   right:0%;
 	width: 100%;
   font-size: 10px;
-  position: absolute;
+  position: relative;
 }
 #bottom-left
 {
